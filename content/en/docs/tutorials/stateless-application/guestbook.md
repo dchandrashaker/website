@@ -63,7 +63,11 @@ The manifest file, included below, specifies a Deployment controller that runs a
 1. Query the list of Pods to verify that the Redis Pod is running:
 
    ```shell
-   kubectl get pods
+   kubectl get pods --all-namespaces
+
+   We can see pods are deployed in namespace kube-system
+
+   kubectl get pods --namespace kube-system
    ```
 
    The response should be similar to this:
