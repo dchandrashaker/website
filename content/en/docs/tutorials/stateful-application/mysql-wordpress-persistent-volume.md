@@ -162,7 +162,7 @@ Now you can verify that all objects exist.
 1. Verify that the Secret exists by running the following command:
 
    ```shell
-   kubectl get secrets
+   kubectl get secrets --namespace kube-syste
    ```
 
    The response should be like this:
